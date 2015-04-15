@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _5._2_Nesting
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string S = "(()(())())";
+            string S2 = "())";
+            Console.WriteLine(solution(S));
+            Console.WriteLine(solution(S2));
+            Console.Read();
+        }
+        static int solution(string S)
+        {
+            Stack<int> kolejka = new Stack<int>();
+            if (S == string.Empty)
+                return 1;
+            else
+            {
+                for (int i = 0; i < S.Length; i++)
+                {
+                    if (S[i] == '(')
+                        kolejka.Push(1);
+
+                    if (kolejka.Count > 0)
+                    {
+                        if (S[i] == ')' && kolejka.Peek() == 1)
+                            kolejka.Pop();
+                    }
+                    else if (kolejka.Count == 0 && S[i] == ')')
+                        return 0;
+
+                }
+            }
+            if (kolejka.Count > 0)
+                return 0;
+            else
+                return 1;
+        }
+    }
+}
