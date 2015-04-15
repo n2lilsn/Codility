@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrogJmp", "FrogJmp\FrogJmp.csproj", "{7A9B0844-80AA-4549-A785-79CBB921B81D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1 FrogJmp", "FrogJmp\1.1 FrogJmp.csproj", "{7A9B0844-80AA-4549-A785-79CBB921B81D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermMissingElem", "PermMissingElem\PermMissingElem.csproj", "{A1CE4922-B198-438F-9969-72CFBAADC0A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.2 PermMissingElem", "PermMissingElem\1.2 PermMissingElem.csproj", "{A1CE4922-B198-438F-9969-72CFBAADC0A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapeEquilibrium", "TapeEquilibrium\TapeEquilibrium.csproj", "{63AE93C9-34EE-49DD-AEC0-4194C5523FBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.3 TapeEquilibrium", "TapeEquilibrium\1.3 TapeEquilibrium.csproj", "{63AE93C9-34EE-49DD-AEC0-4194C5523FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1 PermCheck", "PermCheck\2.1 PermCheck.csproj", "{6EBD6134-AAFA-4251-BD4B-DA58A465C08C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{63AE93C9-34EE-49DD-AEC0-4194C5523FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63AE93C9-34EE-49DD-AEC0-4194C5523FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63AE93C9-34EE-49DD-AEC0-4194C5523FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBD6134-AAFA-4251-BD4B-DA58A465C08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBD6134-AAFA-4251-BD4B-DA58A465C08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBD6134-AAFA-4251-BD4B-DA58A465C08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBD6134-AAFA-4251-BD4B-DA58A465C08C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
