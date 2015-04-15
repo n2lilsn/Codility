@@ -10,7 +10,10 @@ namespace FrogJmp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(solution(10,85,30));
+            int X = 10;
+            int Y = 85;
+            int D = 30;
+            Console.WriteLine(solution(X, Y, D));
             Console.Read();
         }
         static int solution(int X, int Y, int D)

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1 FrogJmp", "FrogJmp\1.1 FrogJmp.csproj", "{7A9B0844-80AA-4549-A785-79CBB921B81D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1 FrogJump", "FrogJmp\1.1 FrogJump.csproj", "{7A9B0844-80AA-4549-A785-79CBB921B81D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.2 PermMissingElem", "PermMissingElem\1.2 PermMissingElem.csproj", "{A1CE4922-B198-438F-9969-72CFBAADC0A7}"
 EndProject
