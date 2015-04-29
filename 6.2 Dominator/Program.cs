@@ -19,41 +19,23 @@ namespace _6._2_Dominator
             A[5] = -1;
             A[6] = 3;
             A[7] = 3;
-            int[] B = new int[3];
-            B[0] = 13;
-            B[1] = 12;
-            B[2] = 1;
+            int[] B = new int[1];
+            B[0] = 3;
 
-            Console.WriteLine(solution(B));
+            Console.WriteLine(solution(A));
             Console.Read();
         }
         static int solution(int[] A)
         {
-            int[] B = A.Distinct().ToArray();
-            int max = 0;
-            int maxv = 0;
-
-
-            var test = (from xx in A
-                        group xx by xx into g
-                        let count = g.Count()
-                        select new { 
-                        });
-
-            for (int i = 0; i < B.Length; i++)
-            {
-                int c = A.Count(o => o == B[i]);
-                if (max < c)
-                {
-                    max = c;
-                    maxv = B[i];
-                }
-            }
-            double tmp = (double)max/A.Length;
-            if (tmp > 0.5)
-                return Array.IndexOf(A, maxv);
-            else
+            if (A.Count() == 0)
                 return -1;
+
+            Dictionary<int, int> counts = A.GroupBy(x => x).ToDictionary(g => g.Key, g => g.Count());
+
+            var max = counts.Max(o => o.Value);
+            int value = counts.First(o => o.Value == max).Key;
+ 
+            return ((double)max / A.Length) > 0.5 ? Array.IndexOf(A, value) : -1;
 
         }
     }
