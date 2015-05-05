@@ -13,6 +13,7 @@ namespace FrogJmp
             int X = 10;
             int Y = 85;
             int D = 30;
+
             Console.WriteLine(solution(X, Y, D));
             Console.Read();
         }

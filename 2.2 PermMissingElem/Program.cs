@@ -12,6 +12,7 @@ namespace _2._2_PermMissingElem
         {
             int N = 8;
             int[] A = new int[N];
+
             A[0] = 1;
             A[1] = 3;
             A[2] = 1;
@@ -20,6 +21,7 @@ namespace _2._2_PermMissingElem
             A[5] = 3;
             A[6] = 5;
             A[7] = 4;
+
             Console.WriteLine(solution(5, A));
             Console.Read();
         }
@@ -50,10 +52,7 @@ namespace _2._2_PermMissingElem
                     }
                 }
             }
-            if (count != X)
-                return -1;
-            else
-                return max;
+            return count != X ? -1 : max;
         }
     }
 }

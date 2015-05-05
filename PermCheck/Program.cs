@@ -11,6 +11,7 @@ namespace PermCheck
         static void Main(string[] args)
         {
             int[] A = new int[4];
+
             A[0] = 4;
             A[1] = 1;
             A[2] = 3;

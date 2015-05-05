@@ -11,6 +11,7 @@ namespace PermMissingElem
         static void Main(string[] args)
         {
             int[] A = new int[4];
+
             A[0] = 2;
             A[1] = 3;
             A[2] = 1;
