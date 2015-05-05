@@ -37,9 +37,7 @@ namespace _5._3_Fish
                 if (B[i] == 0 && kolejka.Count == 0)
                     count++;
                 else if (B[i] == 1)
-                {
                     kolejka.Push(i);
-                }
                 else if (B[i] == 0 && kolejka.Count > 0)
                 {
                     for (int j = kolejka.Count - 1; j >= 0; j--)

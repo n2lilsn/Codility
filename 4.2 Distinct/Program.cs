@@ -24,9 +24,7 @@ namespace _4._2_Distinct
         {
             A.Distinct();
             if (A.Count() == 0)
-            {
                 return 0;
-            }
             else
             {
                 Array.Sort(A);

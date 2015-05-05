@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3 Fish", "5.3 Fish\5.3 Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3 MissingInteger", "2.3 MissingInteger\2.3 MissingInteger.csproj", "{ED6BBACB-C4AC-4FD9-BC57-8BC12A4A45CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2 MinAvgTwoSlice", "3.2 MinAvgTwoSlice\3.2 MinAvgTwoSlice.csproj", "{D46455C9-C20B-4B8A-AA2E-F76A1C998B9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3 MinAvgTwoSlice", "3.2 MinAvgTwoSlice\3.3 MinAvgTwoSlice.csproj", "{D46455C9-C20B-4B8A-AA2E-F76A1C998B9E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2 Distinct", "4.2 Distinct\4.2 Distinct.csproj", "{1606B90E-69CF-4E5E-912A-38D26ACFDDDD}"
 EndProject

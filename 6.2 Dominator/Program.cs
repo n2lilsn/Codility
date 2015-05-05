@@ -19,6 +19,7 @@ namespace _6._2_Dominator
             A[5] = -1;
             A[6] = 3;
             A[7] = 3;
+
             int[] B = new int[1];
             B[0] = 3;
 
@@ -34,9 +35,8 @@ namespace _6._2_Dominator
 
             var max = counts.Max(o => o.Value);
             int value = counts.First(o => o.Value == max).Key;
- 
-            return ((double)max / A.Length) > 0.5 ? Array.IndexOf(A, value) : -1;
 
+            return ((double)max / A.Length) > 0.5 ? Array.IndexOf(A, value) : -1;
         }
     }
 }

@@ -12,6 +12,7 @@ namespace _5._2_Nesting
         {
             string S = "(()(())())";
             string S2 = "())";
+
             Console.WriteLine(solution(S));
             Console.WriteLine(solution(S2));
             Console.Read();
@@ -35,13 +36,9 @@ namespace _5._2_Nesting
                     }
                     else if (kolejka.Count == 0 && S[i] == ')')
                         return 0;
-
                 }
             }
-            if (kolejka.Count > 0)
-                return 0;
-            else
-                return 1;
+            return kolejka.Count > 0 ? 0 : 1;
         }
     }
 }

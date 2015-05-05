@@ -11,6 +11,7 @@ namespace _5._1_Brackets
         static void Main(string[] args)
         {
             string S = "{[()()]}";
+
             Console.WriteLine(solution(S));
             Console.Read();
         }
