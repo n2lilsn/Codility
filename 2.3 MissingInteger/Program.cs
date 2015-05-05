@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2._3_MissingInteger
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -18,34 +18,49 @@ namespace _2._3_MissingInteger
             A[1] = -1;
             A[2] = -1;
             A[3] = -1000000;
-            A[4] = -1;
+            A[4] = 0;
             A[5] = -1;
 
-            B[0] = 1;
-            B[1] = 2;
+            B[0] = int.MinValue;
+            B[1] = int.MaxValue;
 
-            C[0] = int.MinValue;
+            C[0] = 2;
 
-            Console.WriteLine(solution(A));
+            Console.WriteLine(solution(C));
             Console.Read();
         }
-        static int solution(int[] A)
+        public static int solution(int[] A)
         {
             Array.Sort(A);
-            int p = A[0];
-
-            for (int i = 0; i < A.Length; i++)
+            List<int> B = A.ToList();
+            B.RemoveAll(o => o < 0);
+            if (B.Count() != A.Count())
             {
-                if (A[i] != p)
+                int count = 0;
+                for (int i = 0; i < B.Count; i++)
                 {
-                    if (A[i] != p + 1)
-                        return ++p;
-                    else
-                        p++;
+                    if (B[i] == i)
+                        count++;
+                }
+                return count;
+            }
+            else
+            {
+                int p = A[0];
+
+                for (int i = 0; i < A.Length; i++)
+                {
+                    if (A[i] != p)
+                    {
+                        if (A[i] != p + 1 && p >= 0)
+                            return ++p;
+                        else
+                            p++;
+                    }
                 }
             }
 
-            return A.Min() == int.MinValue ? int.MinValue : (A.Min() - 1);
+            return B.Min() - 1;
         }
     }
 }
