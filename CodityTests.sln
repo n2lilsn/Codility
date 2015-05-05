@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2 FrogRiverOne", "2.2 Per
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1 PassingCars", "3.1 PassingCars\3.1 PassingCars.csproj", "{74A7C09E-C2F5-469A-B7EF-D9ABC8DC25B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3 CountDiv", "3.2 CountDiv\3.3 CountDiv.csproj", "{29F5CFAF-14D7-4B6A-8D74-4A10CD7EE7E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2 CountDiv", "3.2 CountDiv\3.2 CountDiv.csproj", "{29F5CFAF-14D7-4B6A-8D74-4A10CD7EE7E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.1 Brackets", "5.1 Brackets\5.1 Brackets.csproj", "{864765EF-8D38-415D-B6E0-F8F43E598E26}"
 EndProject
